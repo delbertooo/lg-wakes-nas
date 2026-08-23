@@ -21,6 +21,7 @@ A lightweight, self-closing, OLED-optimized LG webOS TV application that broadca
 ```text
 lg-wakes-nas/
 ├── README.md                  # This documentation
+├── .gitignore                 # Configured Git ignore rules for build files
 ├── package.json               # Root build/sideload automation scripts
 ├── logo.svg                   # Standard vector SVG logo for the project
 ├── app/                       # webOS Web Application (Frontend UI)
@@ -113,8 +114,3 @@ To change settings at any time:
 1. Open the app from your TV Home Screen.
 2. Press **[Edit Settings]** using your remote before the 3-second timer expires.
 3. Make changes and click **[Save & Wake]**.
-
-### Custom Launcher Icon
-If you want to replace the solid teal placeholder icon with a custom design:
-* Replace `app/icon.png` (80x80 pixels) and `app/largeIcon.png` (130x130 pixels) with your custom PNG images.
-* Re-run `npm run all`.
