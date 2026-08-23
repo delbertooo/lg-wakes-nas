@@ -30,7 +30,9 @@ lg-wakes-nas/
 │   ├── css/
 │   │   └── style.css          # OLED-friendly black theme and focus styles
 │   ├── js/
-│   │   └── app.js             # Client logic and remote spatial navigation
+│   │   ├── app.js             # Client logic and remote spatial navigation
+│   │   ├── webOSTV.js         # Local copy of webOS TV API library
+│   │   └── webOSTV-LICENSE.txt# Apache 2.0 license for the webOS TV library
 │   ├── icon.png               # 80x80 App launcher icon
 │   └── largeIcon.png          # 130x130 App detail icon
 └── service/                   # webOS JavaScript Service (Backend)
