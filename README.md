@@ -72,7 +72,7 @@ On your development machine:
    * *When prompted for a passphrase, enter the 6-character **Passphrase** shown on your TV's Developer Mode app (case sensitive).*
 3. Verify connection:
    ```bash
-   ares-device-info --device default
+   ares-device --system-info default
    ```
 
 ---

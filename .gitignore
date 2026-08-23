@@ -1,0 +1,11 @@
+# webOS Build Packages
+*.ipk
+
+# Node dependencies
+node_modules/
+.npm/
+
+# IDE / System files
+.DS_Store
+.vscode/
+.idea/
