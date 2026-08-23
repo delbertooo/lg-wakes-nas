@@ -1,0 +1,15 @@
+{
+  "id": "de.delbertooo.app.wakenas.service",
+  "description": "Wake-on-LAN Service",
+  "services": [
+    {
+      "name": "de.delbertooo.app.wakenas.service",
+      "methods": [
+        {
+          "name": "wake",
+          "assistant": false
+        }
+      ]
+    }
+  ]
+}

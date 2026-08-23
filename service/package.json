@@ -1,0 +1,7 @@
+{
+  "name": "de.delbertooo.app.wakenas.service",
+  "version": "1.0.0",
+  "description": "Node service for sending UDP magic packets",
+  "main": "wake_service.js",
+  "dependencies": {}
+}

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Definitions for Gradients -->
+  <defs>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffcc" />
+      <stop offset="100%" stop-color="#0077ff" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d0d" />
+      <stop offset="100%" stop-color="#020202" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark OLED Rounded Background Box -->
+  <rect width="512" height="512" rx="96" fill="url(#bgGrad)" stroke="#1a1a1a" stroke-width="6" />
+
+  <!-- Alarm Clock Vibration / LAN Broadcast Waves (Clever Double Meaning) -->
+  <!-- Left Side Ringing Waves -->
+  <path d="M 120 145 A 60 60 0 0 0 120 205" fill="none" stroke="url(#glowGrad)" stroke-width="8" stroke-linecap="round" opacity="0.4" />
+  <path d="M 100 130 A 90 90 0 0 0 100 220" fill="none" stroke="url(#glowGrad)" stroke-width="8" stroke-linecap="round" opacity="0.2" />
+
+  <!-- Right Side Ringing Waves -->
+  <path d="M 392 145 A 60 60 0 0 1 392 205" fill="none" stroke="url(#glowGrad)" stroke-width="8" stroke-linecap="round" opacity="0.4" />
+  <path d="M 412 130 A 90 90 0 0 1 412 220" fill="none" stroke="url(#glowGrad)" stroke-width="8" stroke-linecap="round" opacity="0.2" />
+
+  <!-- The Analog Alarm Clock Structure -->
+  <!-- Legs / Feet -->
+  <line x1="210" y1="230" x2="185" y2="255" stroke="url(#glowGrad)" stroke-width="10" stroke-linecap="round" />
+  <line x1="302" y1="230" x2="327" y2="255" stroke="url(#glowGrad)" stroke-width="10" stroke-linecap="round" />
+
+  <!-- Bells -->
+  <!-- Left Bell -->
+  <path d="M 175 125 C 160 105, 195 70, 215 90 Z" fill="#141414" stroke="url(#glowGrad)" stroke-width="8" stroke-linejoin="round" />
+  <line x1="205" y1="110" x2="220" y2="125" stroke="url(#glowGrad)" stroke-width="8" stroke-linecap="round" />
+  
+  <!-- Right Bell -->
+  <path d="M 337 125 C 352 105, 317 70, 297 90 Z" fill="#141414" stroke="url(#glowGrad)" stroke-width="8" stroke-linejoin="round" />
+  <line x1="307" y1="110" x2="292" y2="125" stroke="url(#glowGrad)" stroke-width="8" stroke-linecap="round" />
+
+  <!-- Center Hammer -->
+  <rect x="248" y="85" width="16" height="30" rx="8" fill="url(#glowGrad)" />
+
+  <!-- Clock Main Body -->
+  <circle cx="256" cy="175" r="60" fill="#141414" stroke="url(#glowGrad)" stroke-width="8" />
+
+  <!-- Clock Dial Hand Details -->
+  <!-- Hour hand (points to ~7 o'clock) -->
+  <line x1="256" y1="175" x2="225" y2="195" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+  <!-- Minute hand (points to ~12 o'clock) -->
+  <line x1="256" y1="175" x2="256" y2="135" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+  <!-- Center Pin -->
+  <circle cx="256" cy="175" r="8" fill="url(#glowGrad)" />
+
+  <!-- Bottom: Stylized NAS/Server Rack (Receiving the signal) -->
+  <rect x="180" y="300" width="152" height="130" rx="16" fill="#141414" stroke="#262626" stroke-width="6" />
+  
+  <!-- Disk Tray Slots -->
+  <rect x="200" y="325" width="112" height="12" rx="6" fill="#222222" />
+  <rect x="200" y="355" width="112" height="12" rx="6" fill="#222222" />
+  <rect x="200" y="385" width="112" height="12" rx="6" fill="#222222" />
+
+  <!-- Disk LED Indicator Lights (Electric Gradient Glow) -->
+  <circle cx="210" cy="331" r="4" fill="url(#glowGrad)" />
+  <circle cx="210" cy="361" r="4" fill="url(#glowGrad)" />
+  <circle cx="210" cy="391" r="4" fill="url(#glowGrad)" />
+
+  <!-- Signal Connection Core Light in between Clock & NAS -->
+  <circle cx="256" cy="265" r="8" fill="url(#glowGrad)" />
+</svg>

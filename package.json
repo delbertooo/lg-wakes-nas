@@ -1,0 +1,15 @@
+{
+  "name": "lg-wakes-nas",
+  "version": "1.0.0",
+  "description": "Build scripts and tools for webOS WOL App",
+  "scripts": {
+    "clean": "rm -f *.ipk",
+    "build": "npm run clean && ares-package app service",
+    "install": "ares-install --device default de.delbertooo.app.wakenas_1.0.0_all.ipk",
+    "launch": "ares-launch --device default de.delbertooo.app.wakenas",
+    "close": "ares-launch --device default --close de.delbertooo.app.wakenas",
+    "all": "npm run build && npm run install && npm run launch",
+    "render-icons": "sips -s format png -z 80 80 logo.svg -o app/icon.png && sips -s format png -z 130 130 logo.svg -o app/largeIcon.png"
+  },
+  "devDependencies": {}
+}

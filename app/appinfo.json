@@ -1,0 +1,13 @@
+{
+  "id": "de.delbertooo.app.wakenas",
+  "version": "1.0.0",
+  "vendor": "delbertooo",
+  "type": "web",
+  "main": "index.html",
+  "title": "Wake my NAS",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "requiredPermissions": [
+    "activity.operation"
+  ]
+}

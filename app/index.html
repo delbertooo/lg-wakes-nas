@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Wake My NAS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Load webOS TV library -->
+    <script src="https://cdn.jsdelivr.net/npm/webostvjs/webOSTV.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: Auto-Wake Countdown State -->
+        <div id="waking-view" class="view hidden">
+            <h1 class="title">Waking up your NAS...</h1>
+            <div class="status-box">
+                <p id="wake-status">Initiating connection...</p>
+                <p class="details" id="wake-details"></p>
+            </div>
+            <div class="countdown-container">
+                <div class="countdown-bar" id="countdown-bar"></div>
+            </div>
+            <div class="actions">
+                <button id="btn-edit" class="focusable active">Edit Settings</button>
+                <button id="btn-close-now" class="focusable">Close Now</button>
+            </div>
+        </div>
+
+        <!-- Section 2: Configuration/Settings State -->
+        <div id="settings-view" class="view">
+            <h1 class="title">WOL Configuration</h1>
+            <div class="form">
+                <div class="form-group">
+                    <label for="mac-input">MAC Address (12 Hex digits):</label>
+                    <input type="text" id="mac-input" class="focusable" placeholder="e.g. aabbccddeeff" maxlength="17" autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="ip-input">Broadcast IP Address:</label>
+                    <input type="text" id="ip-input" class="focusable" placeholder="Default: 255.255.255.255">
+                </div>
+                <div class="form-group">
+                    <label for="port-input">UDP Port:</label>
+                    <input type="text" id="port-input" class="focusable" placeholder="Default: 9">
+                </div>
+                <div class="actions">
+                    <button id="btn-save" class="focusable">Save & Wake</button>
+                    <button id="btn-cancel" class="focusable">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
